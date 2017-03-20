@@ -1,0 +1,23 @@
+<img id="soragodong" src="https://pbs.twimg.com/profile_images/793104363333885953/3PxKG-Mg.jpg">
+<p id="awnser"></p>
+<script>
+	console.log("hey");
+	var table = [
+		"응",
+		"아니",
+		"몰라",
+		"그러하다",
+		"그렇지 아니하다",
+		"ㅇㅇ",
+		"ㄴㄴ",
+		"ㅇ",
+		"ㄴ"
+		];
+	var awnser = document.getElementById("awnser");
+	document.getElementById("soragodong").addEventListener("click", function(){
+		var index = Math.floor(Math.random() * table.length);
+		awnser.innerHTML = table[index];
+	})
+	console.log("ready", awnser)
+</script>
+
